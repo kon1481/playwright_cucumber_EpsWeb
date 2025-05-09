@@ -1,0 +1,40 @@
+# Node.js dependencies
+node_modules/
+
+# Allure test reports
+allure-report/
+
+# Build outputs
+dist/
+lib/
+out/
+build/
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Test reports & results
+reports/
+json-output/
+test-results/
+playwright-report/
+trace.zip
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+src/test/hooks/

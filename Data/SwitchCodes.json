@@ -1,0 +1,117 @@
+{
+    "Accounting":[
+    "Smiths Under Fred Meyer",
+    "CStore Accounting"
+    ],
+    "Blackhawk (1st Party)": [
+    "Blackhawk (1st Party) - 3",
+    "Blackhawk (1st Party) - 2",
+    "Blackhawk (1st Party) - 1"
+    ],
+    "Blackhawk (3rd Party)":[
+    "Blackhawk (3rd Party) - 4",
+    "Blackhawk (3rd Party) - 3",
+    "Blackhawk (3rd Party) - 2",
+    "Blackhawk (3rd Party) - 1"
+    ],
+    "Blackhawk UMS":[
+    "Blackhawk UMS 3",
+    "Blackhawk UMS 2"
+    ],
+    "Certegy Check":[
+    "Certegy 2",
+    "Certegy 1"
+    ],
+    "Green Dot": [
+    "Green Dot 1",
+    "Green Dot 2"
+    ],
+    "ELAN (FSV)": [
+    "ELAN (FSV) 2",
+    "ELAN (FSV) 1"
+    ],
+    "Genesis":[
+    "Genesis 2",
+    "Genesis 1" 
+    ],
+    "First Data (ValueLink)":[
+    "First Data (ValueLink) 2",
+    "First Data (ValueLink) 1"
+    ],
+    "FISERV" : [
+    "FISERV 2",
+    "FISERV 1"
+    ],
+    "Metavante Direct" : [
+    "Metavante 2"
+    ],
+    "Grocery":[
+    "Kitchen 1883 - Cincinnati",
+    "The Little Clinic",
+    "Smiths",
+    "QFC",
+    "Food 4 Less",
+    "Ralphs",
+    "Fred Meyer Jewelry",
+    "Fred Meyer",
+    "Frys",
+    "King Soopers",
+    "Dillon",
+    "Harris-Teeter Network (Ocado)",
+    "Kroger Network (Ocado)",
+    "Roundy's Wisconsin",
+    "local mkt",
+    "Roundy's Chicago",
+    "CS 6",
+    "CS 3",
+    "CS 2",
+    "SHIP (Boca)",
+    "Kroger Specialty Pharmacy",
+    "Walgreens",
+    "Harris-Teeter",
+    "KCRC",
+    "Ruler Foods",
+    "Moto",
+    "Dallas",
+    "Houston",
+    "Mid Atlantic",
+    "Nashville",
+    "Delta",
+    "Louisville",
+    "Central",
+    "Michigan",
+    "Columbus",
+    "Cincinnati",
+    "Atlanta"
+    ],
+
+    "Incomm": [
+    "INCOMM 2",
+    "INCOMM 1"
+    ],
+    "Stored Value" :[
+        ""
+    ],
+    "Vantiv (5/3 Bank)": [
+        "5/3 Bank 8",
+        "5/3 Bank 7",
+        "5/3 Bank 6",
+        "5/3 Bank 5",
+        "5/3 Bank 4",
+        "5/3 Bank 3",
+        "5/3 Bank 2" 
+        ],
+    "Vantiv (ISO)":[
+    "Vantiv (ISO) 8",
+    "Vantiv (ISO) 7",
+    "Vantiv (ISO) 6",
+    "Vantiv (ISO) 5",
+    "Vantiv (ISO) 4",
+    "Vantiv (ISO) 3",
+    "Vantiv (ISO) 2",
+    "Vantiv (ISO) 1"
+    ],
+    "TDR Card Services" : [ 
+        ""
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "Admin": [
+      "Fetch Token (161-1)",
+      "Fetch Account (161-2)"
+    ],
+    "Certegy": [
+      "All Types (33 -0)",
+      "Verify Chk (3320-0)",
+      "Rev Chk Cash (3324-0)"
+    ],
+    "Credit": [
+      "All Types (2  -0)",
+      "Rev Refund (204-0)",
+      "Refund (210-0)",
+      "Cash Withdrawal (220-0)",
+      "Rev Purchase (224-0)",
+      "Purchase (225-0)",
+      "Rev CC Pre-auth (224-1)",
+      "Rev CC Pre-auth Comp (224-2)",
+      "CC Pre-auth (225-1)",
+      "CC Pre-auth Comp (225-2)",
+      "Bill Payment (201-0)",
+      "EMV Offline-Voice Auth Purchase (225-3)",
+      "Verification (260-1)",
+      "Refund (SAF) (210-3)",
+      "Deferred Purchase (225-4)"
+    ],
+    "Debit": [
+      "All Types (4  -0)",
+      "Rev Refund (404-0)",
+      "Refund (410-0)",
+      "Cash Withdrawal (420-0)",
+      "Rev Purchase (424-0)",
+      "Purchase (425-0)",
+      "Rev Pre-auth (424-1)",
+      "Rev Pre-auth Comp (424-2)",
+      "DB Pre-auth (425-1)",
+      "DB Pre-auth Comp (425-2)",
+      "EMV Offlie Purchase (425-3)",
+      "Refund (SAF) (410-3)"
+    ],
+    "EBT Cash": [
+      "All Types (7  -0)",
+      "AFDC Refund (710-0)",
+      "AFDC Cash Withdrawal (720-0)",
+      "AFDC Rev Purchase (724-0)",
+      "AFDC Purchase (725-0)",
+      "AFDC Balance Inquiry (760-0)"
+    ],
+    "EBT WIC": [
+      "All Types (8  -0)",
+      "Rev WIC Puchase (824-0)",
+      "WIC Purchase (825-0)",
+      "WIC Benefits Inquiry (860-0)",
+      "WIC Purch Inquiry (861-0)"
+    ],
+    "Food Stamp": [
+      "All Types (6  -0)",
+      "Rev FS Refund (604-0)",
+      "EBT Refund (610-0)",
+      "Rev EBT FS Purchase (624-0)",
+      "EBT FS Purchase (625-0)",
+      "Balance Inquiry (660-0)",
+      "EBT ECOM Completion (625-2)"
+    ],
+    "Gift": [
+      "All Types (3  -0)",
+      "GC Reimbursed (302-0)",
+      "Rev Mdse Refund (304-0)",
+      "Rev Refund Card (305-0)",
+      "Rev Cash Out Bal (306-0)",
+      "Mdse Return (310-0)",
+      "Cash Out Bal (320-0)",
+      "Issuance (321-0)",
+      "Rev Reload (322-0)",
+      "Rev Issuance (323-0)",
+      "Rev Mdse Purch (324-0)",
+      "Mdse Purchase (325-0)",
+      "Reload (328-0)",
+      "Refund Card Value (329-0)",
+      "Balance Inquiry (360-0)",
+      "Rev Pre-auth (324-1)",
+      "Rev Pre-auth Comp (324-2)",
+      "GC Pre-auth (325-1)",
+      "GC Pre-auth Comp (325-2)",
+      "Rev PIN On Receipt (323-9)"
+    ],
+    "Phone": [
+      "All Types (9  -0)",
+      "Void of Refund (904-0)",
+      "Refund/Deact (910-0)",
+      "Pin Activation (921-0)",
+      "Refresh Void (922-0)",
+      "Void Pin Activation (923-0)",
+      "Refresh (928-0)",
+      "Pre-Authorization (960-0)"
+    ],
+    "System": [
+      "All Types (21 -0)",
+      "Store Close (2113-0)",
+      "EMV Fail Advice (2125-4)"
+    ],
+    "WIC TRAN": [
+      "Enrollment (80 -0)",
+      "Repeat (90 -0)"
+    ]
+  }
+  

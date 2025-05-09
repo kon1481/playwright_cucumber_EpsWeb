@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src/test",
+    "paths": {
+      "@pages/*": ["pages/*"] 
+    }
+
+  },
+  "include": [
+    "src/**/*.ts",
+    "locators/**/*.ts" 
+, "global-browser.ts"  ]
+}
