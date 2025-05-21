@@ -1,6 +1,6 @@
 import { Locator } from '@playwright/test';
 import { Page } from 'playwright';
-import { EPSWebLocators } from '../../locators/searchTransactionPage';
+import { searchTransactionPage } from '../../locators/searchTransactionPage';
 
 export class LoginPage {
   private page: Page;
@@ -15,31 +15,31 @@ export class LoginPage {
   async navigateToEPS(): Promise<void> {   
   await this.page.goto(this.url, { waitUntil: 'domcontentloaded' });  
   await this.page.waitForLoadState('networkidle'); // ✅ Ensure the page is fully loaded
-  await this.page.locator(EPSWebLocators.username).waitFor({ state: 'visible', timeout: 60000 });
+  await this.page.locator(searchTransactionPage.username).waitFor({ state: 'visible', timeout: 60000 });
   }
 
   async enterCredentials(username: string, password: string): Promise<void> {
-    await this.page.locator(EPSWebLocators.username).fill(username);
-    await this.page.locator(EPSWebLocators.nextButton).click();
+    await this.page.locator(searchTransactionPage.username).fill(username);
+    await this.page.locator(searchTransactionPage.nextButton).click();
     await this.page.waitForTimeout(2000);
-    await this.page.locator(EPSWebLocators.password).waitFor({ state: 'visible' });
-    await this.page.locator(EPSWebLocators.password).fill(password);
-    await this.page.locator(EPSWebLocators.signInButton).click();
+    await this.page.locator(searchTransactionPage.password).waitFor({ state: 'visible' });
+    await this.page.locator(searchTransactionPage.password).fill(password);
+    await this.page.locator(searchTransactionPage.signInButton).click();
     await this.page.waitForTimeout(15000);
   }
 
   async verifyEpsWebPage(): Promise<void> {
-    await this.page.locator(EPSWebLocators.titleLogo).waitFor({ state: 'visible' });
+    await this.page.locator(searchTransactionPage.titleLogo).waitFor({ state: 'visible' });
   }
 
   async clickOnSkipPopup(): Promise<void> {
     await this.page
-      .frameLocator(EPSWebLocators.embeddedFrame)
-      .locator(EPSWebLocators.skipPopup)
+      .frameLocator(searchTransactionPage.embeddedFrame)
+      .locator(searchTransactionPage.skipPopup)
       .click();
   }
 
   async clickOnPreviewButton(): Promise<void> {
-    await this.page.frameLocator(EPSWebLocators.embeddedFrame).locator(EPSWebLocators.previewButton).click();
+    await this.page.frameLocator(searchTransactionPage.embeddedFrame).locator(searchTransactionPage.previewButton).click();
   }
 }

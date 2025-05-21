@@ -187,28 +187,5 @@ Then('I click on more Details button', async function () {
     await searchTransactions.clickOnMoreDetailsButton();
 });
 
-Then('I verify the columns on the WIC tab', async function () {
-    searchTransactions = new SearchTransactions(this.page);
-    await searchTransactions.validateWICtab();
-});
 
-Then('I verify the columns on the Store Totals tab', async function () {
-    searchTransactions = new SearchTransactions(this.page);
-    await searchTransactions.validateStoreTotalstab();
-});
-
-Then('I verify the columns on the fleet tab', async function () {
-    searchTransactions = new SearchTransactions(this.page);
-    await searchTransactions.validateFleetTab();
-  });
-
-Then('I verify the columns on the Check tab', async function () {
-    searchTransactions = new SearchTransactions(this.page);
-    await searchTransactions.validateChecktab();
-  });
-
-  Then('I verify the columns on the Incomm HealthCare tab', async function () {
-    searchTransactions = new SearchTransactions(this.page);
-    await searchTransactions.validateIncommHealthtab();
-  });
 
