@@ -67,3 +67,18 @@ Then('I verify the columns on the Other orders tab', async function () {
   const searchTransactionsDetails = new SearchTransactionDetails(this.page);
   await searchTransactionsDetails.ValidateOtherOrderTabColumns();
 });
+
+Then('I verify the columns on the Card tab', async  function () {
+  const searchTransactionsDetails = new SearchTransactionDetails(this.page);
+  await searchTransactionsDetails.ValidateCardTabColumns();
+});
+
+Then('I verify the columns on the PinPad tab', async function () {
+  const searchTransactionsDetails = new SearchTransactionDetails(this.page);
+  await searchTransactionsDetails.ValidatePinPadTabColumns();
+});
+
+Then('I verify the columns on the Other Tab', async function () {
+  const searchTransactionsDetails = new SearchTransactionDetails(this.page);
+  await searchTransactionsDetails.ValidateOtherTabColumns();
+});

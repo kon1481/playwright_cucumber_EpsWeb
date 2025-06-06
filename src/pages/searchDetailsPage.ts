@@ -254,8 +254,81 @@ async validateValueCardTabColumns() {
     }
     }
 
+    async ValidateCardTabColumns() {
+        const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
+        await frame.locator(transactionDetailsPage.Card).waitFor({ state: 'visible', timeout: 5000 });
+        frame.locator(transactionDetailsPage.Card).click();
+        const CardTabFields = {
+            'Provider_Card': transactionDetailsPage.Provider_Card,
+            'CardExpirationDate_Card': transactionDetailsPage.CardExpirationDate_Card,
+            'Network_Card': transactionDetailsPage.Network_Card,
+            'Product_Card': transactionDetailsPage.Product_Card,
+            'ProductionDescription_Card' : transactionDetailsPage.ProductionDescription_Card,
+            'ProductProvider_card': transactionDetailsPage.ProductProvider_card,
+            
+        }
+        for (const [fieldName, xpath] of Object.entries(CardTabFields)) {
+            const element = frame.locator(`xpath=${xpath}`);
+            await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
+        }
+        } 
+        
+    async ValidatePinPadTabColumns() {
+        const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
+        await frame.locator(transactionDetailsPage.PinPad).waitFor({ state: 'visible', timeout: 5000 });
+        frame.locator(transactionDetailsPage.PinPad).click();
+        const PinPadTabFields = {
+            
+            'SerialNumber_PinPad': transactionDetailsPage.SerialNumber_PinPad,
+            'DeviceName_PinPad': transactionDetailsPage.DeviceName_PinPad,
+            'MACAddress_PinPad': transactionDetailsPage.MACAddress_PinPad,
+            'Security_PinPad': transactionDetailsPage.Security_PinPad,
+            'IPAddress_PinPad' : transactionDetailsPage.IPAddress_PinPad,
+            'KSNNumber_PindPad': transactionDetailsPage.KSNNumber_PindPad,
+        }
+        for (const [fieldName, xpath] of Object.entries(PinPadTabFields)) {
+            const element = frame.locator(`xpath=${xpath}`);
+            await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
+        }
 
-}
+    }
+
+    async ValidateOtherTabColumns () {
+        const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
+        await frame.locator(transactionDetailsPage.Other).waitFor({ state: 'visible', timeout: 5000 });
+        frame.locator(transactionDetailsPage.Other).click();
+        const OtherTabFields = {
+            'EFTStoreNumber_Other': transactionDetailsPage.Provider_Card,
+            'Merchant_Other': transactionDetailsPage.CardExpirationDate_Card,
+            'Processor_Other': transactionDetailsPage.Network_Card,
+            'TermSeqNumber_Other': transactionDetailsPage.Product_Card,
+            'TerminalId_Other' : transactionDetailsPage.ProductionDescription_Card,
+            'RetrievalNbr_Other': transactionDetailsPage.ProductProvider_card,
+            'PinCapable_Other': transactionDetailsPage.PinCapable_Other,
+            'Source_Other' : transactionDetailsPage.Source_Other,
+            'RemoteResponseTime_other': transactionDetailsPage.RemoteResponseTime_other,
+            'CVVResponse_Other' : transactionDetailsPage.CVVResponse_Other,
+            'PinlessDebit_Other': transactionDetailsPage.PinlessDebit_Other,
+            'SettlementRespnse_Other': transactionDetailsPage.SettlementRespnse_Other,
+            'WorldPayAPITransactionId_Other' : transactionDetailsPage.WorldPayAPITransactionId_Other,
+            'ChaseMaerchantID_Other' : transactionDetailsPage.ChaseMerchantID_Other,
+            'ForcePost_Other' : transactionDetailsPage.ForcePost_Other,
+            'TransRespTime_Other': transactionDetailsPage.TransRespTime_Other,
+            'DebitOptimization_Other' : transactionDetailsPage.DebitOptimization_Other,
+            'OriginalTerminalID_Other': transactionDetailsPage.OriginalTerminalID_Other,
+            'ClientIPAddress_Other' : transactionDetailsPage.ClientIPAddress_Other,
+            'SalesTax_Other' :transactionDetailsPage.SalesTax_Other
+        }
+        for (const [fieldName, xpath] of Object.entries(OtherTabFields)) {
+            const element = frame.locator(`xpath=${xpath}`);
+            await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
+        }
+
+    }
+ }
+
+
+
 
 
 

@@ -42,6 +42,7 @@ export const searchTransactionPage  = {
    switchSub :'//div[@id="react-combobox-view-13"]',
    switchSubOptions :'//li[@class="label_lbho4y-o_O-item_15nbabd-o_O-item_1cguow8"]',
    startDate : '(//span[@class = "fui-Input__contentAfter r1572tok"])[2]',
+   clickSelectDate : '(//button[@type="button"])[30]',
    selectStartDate : '(//button[@class="fui-CalendarDayGrid__dayButton ___ncsoa40 f1c21dwh f2i1086 f1rlsnju f1stktl2 f1127022 f1ern45e f1n71otn f1h8hb77 f1deefiw f1ym3bx4 f1k6fduh fy9rknc ff5ikls frvgh55 f8xlz6g f1mtd64y f1y7q3j9 f1g0x7ka fhxju0i f1qch9an f1cnd47f fq4mcun f10y451g f1dwpgx3"])[10]',
    searchButton : '//div[@class="___1kbivqe f1yab3r1 f1vgc2s3 f1e31b4d f15twtuk f1p9o1ba f1sil6mw f1euv43f"]/button',
    clickCardType: '(//div[@class="combobox-view-chevron arrowContainer_1kmq8gc-o_O-container_r2h174-o_O-containerColors_1l7zmmc"])[10]',

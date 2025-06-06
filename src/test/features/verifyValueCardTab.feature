@@ -1,5 +1,5 @@
 Feature: Validate Value Card Tab in EPS web in powerApps
-
+@smoke
   Scenario: Verify Valuecard tab on  in EPS Web powerApps
     Given I navigate to the EPS Web PowerApps
     When I enter username and password

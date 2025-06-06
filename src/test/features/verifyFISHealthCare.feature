@@ -1,6 +1,8 @@
-Feature: Validate fleet Tab in EPS web in powerApps
+@smoke
 
-  Scenario: Verify fleet tab on  in EPS Web powerApps
+Feature: Validate FIS HealthCare Tab in EPS web in powerApps
+
+  Scenario: Verify FIS HealthCare tab on  in EPS Web powerApps
     Given I navigate to the EPS Web PowerApps
     When I enter username and password
       And  I should see the EPS Web PowerApps page

@@ -277,8 +277,8 @@ export class SearchTransactions {
         const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
         await frame.locator(searchTransactionPage.startDate).waitFor({ state: 'visible', timeout: 5000 });
         frame.locator(searchTransactionPage.startDate).click();
-        await frame.locator(searchTransactionPage.selectStartDate).waitFor({ state: 'visible', timeout: 5000 });
-        frame.locator(searchTransactionPage.selectStartDate).click();
+        await frame.locator(searchTransactionPage.clickSelectDate).waitFor({ state: 'visible', timeout: 5000 });
+        frame.locator(searchTransactionPage.clickSelectDate).click();
     }
 
     async selectCardType(cardType: string): Promise<void> {
@@ -298,12 +298,13 @@ export class SearchTransactions {
 
     async clickOnTransaction(): Promise<void> {
         const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
-        await frame.locator(transactionDetailsPage.clickOnTransaction).waitFor({ state: 'visible', timeout: 60000 });
-        frame.locator(transactionDetailsPage.clickOnTransaction).click();
+        await frame.locator(transactionDetailsPage.selectTransaction).waitFor({ state: 'visible', timeout: 60000 });
+        frame.locator(transactionDetailsPage.selectTransaction).click();
+        await this.page.waitForTimeout(5000);
+        
     }
     async clickOnMoreDetailsButton(): Promise<void> {
         const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
-        // await frame.locator(searchTransactionPage.focus).click();
         await frame.locator(transactionDetailsPage.moreDetailsButton).waitFor({ state: 'visible', timeout: 10000 });
         await frame.locator(transactionDetailsPage.moreDetailsButton).click();
     }
