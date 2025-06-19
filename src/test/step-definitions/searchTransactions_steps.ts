@@ -187,5 +187,9 @@ Then('I click on more Details button', async function () {
     await searchTransactions.clickOnMoreDetailsButton();
 });
 
+When('I select the start date and End date', async function () {
+    searchTransactions = new SearchTransactions(this.page);
+    await searchTransactions.clickonStartDateEndDate();
+  });
 
 

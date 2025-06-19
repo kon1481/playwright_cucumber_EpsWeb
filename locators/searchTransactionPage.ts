@@ -47,7 +47,11 @@ export const searchTransactionPage  = {
    searchButton : '//div[@class="___1kbivqe f1yab3r1 f1vgc2s3 f1e31b4d f15twtuk f1p9o1ba f1sil6mw f1euv43f"]/button',
    clickCardType: '(//div[@class="combobox-view-chevron arrowContainer_1kmq8gc-o_O-container_r2h174-o_O-containerColors_1l7zmmc"])[10]',
    selectCardType: (cardType: string) => `//*[normalize-space(text())='${cardType}']`,
-   
+   ClickOndatePicker : '(//input[@placeholder="Select a date..."])[1]',
+   previousMonthButton : '(//button[@class="fui-CalendarDay__headerIconButton ___emq7yv0 f1c21dwh f1ern45e f1n71otn f1h8hb77 f1deefiw ft85np5 f11d4kpn ftgm304 f1mo0ibp fy9rknc fxldao9 f336tjw f1gl81tg f1mk8lai f10pi13n f17mccla f1w9dchk f18a0fwf f3sdaeg f8491dx f15rpok4 f1wvkgvo f1wdoaqd"])[1]',
+   selectPreviousMonthstartDate : '(//*[@class="fui-CalendarDayGrid__dayButton ___1cmgzk6 f1c21dwh f3bhgqh f1ym3bx4 f1k6fduh fy9rknc ff5ikls frvgh55 f8xlz6g f1gl81tg f1mk8lai fq4mcun f10y451g f1dwpgx3 f18a0fwf f1mhq3ai f7la2e8"])[26]',
+   ClickOnEndDate :'(//*[@placeholder="Select a date..."])[2]',
+   selectPreviousMonthEndDate : '//*[@aria-label="15, May, 2025"]',
 
 
 

@@ -82,3 +82,9 @@ Then('I verify the columns on the Other Tab', async function () {
   const searchTransactionsDetails = new SearchTransactionDetails(this.page);
   await searchTransactionsDetails.ValidateOtherTabColumns();
 });
+
+
+Then('I verify the columns on the Soda tab', async function () {
+  const searchTransactionsDetails = new SearchTransactionDetails(this.page);
+  await searchTransactionsDetails.ValidateSodaTab();
+});

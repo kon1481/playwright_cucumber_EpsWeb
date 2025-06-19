@@ -139,7 +139,7 @@ export const transactionDetailsPage = {
    OriginalTerminalID_Other  :'(//div[@class=" appmagic-content-control-name appmagic-control-view canvasContentDiv"])[39]',
    PaymentAccountReferenceNumber_Other  :'(//div[@class=" appmagic-content-control-name appmagic-control-view canvasContentDiv"])[40]',
    ChaseMerchantID_Other  :'(//div[@class=" appmagic-content-control-name appmagic-control-view canvasContentDiv"])[41]',
-   ClientIPAddress_Other:'(//div[@class=" appmagic-content-control-name appmagic-control-view canvasContentDiv"])[42]'
-
-
+   ClientIPAddress_Other:'(//div[@class=" appmagic-content-control-name appmagic-control-view canvasContentDiv"])[42]',
+   SodaTab : '(//button[@class="fui-Tab ___1xoz21z f122n59 fwhevhj f61n433 fv1dfc8 f1q8l70w f1aa9q02 f16jpd5f f1jar5jt fyu767a fre7gi1 f1358rze fqdk4by f1rvrf73 f1k6fduh f13qh94s fi64zpg f1u07yai frn2hmy f1olsevy fk6fouc f1i3iumi f1s6fcnf f10pi13n f1p9o1ba f1sil6mw f1cxpek8 f4d9j23 f1rjii52 fikn0iw f11gcy0p fdxej3c f1ng84yb f8hki3x f1d2448m f1bjia2o ffh67wi f1p7hgxw f1way5bb f9znhxp fqa318h f1vjpng2 f1c21dwh fjxutwb fophhak fmmjozx f1mfqf41 f10aiid4 fpkze5g f149wc3x fjioou7 fhw179n f10y1uxy f6aiuy0 f1kfpfnu f1dx5wco f1kmhr4c fl1ydde f1y7maxz f105swax fscdmel f1tkcw1w f1u11x8o f16cxu0 f1nwgacf f15ovonk fvje46l fchca7p f1s2r9ax f1o0nnkk fxb7rol"])[4]',
+   SodaHealthTranID :'(//div[@class="___1rwvbhc f22iagw fly5x3f f1l02sjl f6jr5hl"])[7]'
 }

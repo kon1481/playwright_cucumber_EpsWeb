@@ -323,9 +323,19 @@ async validateValueCardTabColumns() {
             const element = frame.locator(`xpath=${xpath}`);
             await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
         }
-
     }
- }
+    async ValidateSodaTab() {
+        const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
+        await frame.locator(transactionDetailsPage.SodaTab).waitFor({ state: 'visible', timeout: 10000 });
+        frame.locator(transactionDetailsPage.SodaTab).click();
+        const SodaTabFields = {
+            'SodaHealthTranID': transactionDetailsPage.SodaHealthTranID
+        }
+        for (const [fieldName, xpath] of Object.entries(SodaTabFields)) {
+            const element = frame.locator(`xpath=${xpath}`);
+            await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
+        }
+    } }
 
 
 

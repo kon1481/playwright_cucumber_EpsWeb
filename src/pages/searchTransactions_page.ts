@@ -309,6 +309,33 @@ export class SearchTransactions {
         await frame.locator(transactionDetailsPage.moreDetailsButton).click();
     }
 
+    async clickonStartDateEndDate(): Promise<void> {
+        const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
+        await frame.locator(searchTransactionPage.ClickOndatePicker).waitFor({ state: 'visible', timeout: 5000 });
+        frame.locator(searchTransactionPage.ClickOndatePicker).click();
+        await this.page.waitForTimeout(3000);
+
+        await frame.locator(searchTransactionPage.previousMonthButton).waitFor({ state: 'visible', timeout: 10000 });
+        frame.locator(searchTransactionPage.previousMonthButton).click();
+        await this.page.waitForTimeout(3000);
+
+        await frame.locator(searchTransactionPage.selectPreviousMonthstartDate).waitFor({ state: 'visible', timeout: 10000 });
+        frame.locator(searchTransactionPage.selectPreviousMonthstartDate).click();
+        await this.page.waitForTimeout(3000);
+
+        await frame.locator(searchTransactionPage.ClickOnEndDate).waitFor({ state: 'visible', timeout: 5000 });
+        frame.locator(searchTransactionPage.ClickOnEndDate).click();
+        await this.page.waitForTimeout(3000);
+
+        await frame.locator(searchTransactionPage.previousMonthButton).waitFor({ state: 'visible', timeout: 10000 });
+        frame.locator(searchTransactionPage.previousMonthButton).click();
+        await this.page.waitForTimeout(3000);
+
+        await frame.locator(searchTransactionPage.selectPreviousMonthEndDate).waitFor({ state: 'visible', timeout: 10000 });
+        frame.locator(searchTransactionPage.selectPreviousMonthEndDate).click();
+        
+    }
+    
 
 
 }
