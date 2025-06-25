@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import * as fs from 'fs';
-import { SearchTransactions } from '../../pages/searchTransactions_page';
+import { SearchTransactions } from '../../pages/searchTransactionsPage';
 
 let searchTransactions: SearchTransactions;
 

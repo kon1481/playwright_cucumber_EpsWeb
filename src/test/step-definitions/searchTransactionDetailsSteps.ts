@@ -88,3 +88,8 @@ Then('I verify the columns on the Soda tab', async function () {
   const searchTransactionsDetails = new SearchTransactionDetails(this.page);
   await searchTransactionsDetails.ValidateSodaTab();
 });
+
+Then('I verify the columns on the Side bar panel', async function () {
+  const searchTransactionsDetails = new SearchTransactionDetails(this.page);
+  await searchTransactionsDetails.ValidateSidebarColumns();
+});

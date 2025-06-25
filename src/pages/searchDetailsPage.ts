@@ -1,7 +1,7 @@
 import { searchTransactionPage } from '../../locators/searchTransactionPage';
 import { transactionDetailsPage } from '../../locators/transactionDetailsPage';
-import { Page, Locator, expect } from '@playwright/test';
-import { SearchTransactions } from './searchTransactions_page';
+import { Page, Locator, expect, PlaywrightTestConfig } from '@playwright/test';
+import { SearchTransactions } from './searchTransactionsPage';
 
 export class SearchTransactionDetails {
     private page: Page;
@@ -335,7 +335,41 @@ async validateValueCardTabColumns() {
             const element = frame.locator(`xpath=${xpath}`);
             await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
         }
-    } }
+    } 
+
+    async ValidateSidebarColumns() : Promise<void> {
+        const frame = this.page.frameLocator(searchTransactionPage.embeddedFrame);
+        await frame.locator(transactionDetailsPage.AccountNumber).waitFor({ state: 'visible', timeout: 10000 });
+        const sideBarColumns = {
+            'AccountNumber': transactionDetailsPage.AccountNumber,
+            'Division' : transactionDetailsPage.Division,
+            'Store' : transactionDetailsPage.Store,
+            'TranType' : transactionDetailsPage.TranType,
+            'POSDateTime' : transactionDetailsPage.POSDateTime,
+            'RequestedAmt' : transactionDetailsPage.RequestedAmt,
+            'ApprovedAmt' : transactionDetailsPage.ApprovedAmt,
+            'CashbackAmt' : transactionDetailsPage.CashbackAmt,
+            'HostDateTime' : transactionDetailsPage.HostDateTime,
+            'RegisterNbr' : transactionDetailsPage.RegisterNbr,
+            'POSOrderNum' : transactionDetailsPage.POSOrderNum,
+            'ReceiptNum' : transactionDetailsPage.ReceiptNum,
+            'CashierID' :  transactionDetailsPage.CashierID,
+            'TerminalCode' : transactionDetailsPage.TerminalCode,
+            'EntryMode' : transactionDetailsPage.EntryMode,
+            'Reversla' : transactionDetailsPage.Reversla,
+            'Offline' : transactionDetailsPage.Offline,
+            'LoyaltyCard' : transactionDetailsPage.LoyaltyCard,
+            'TransactionFee' : transactionDetailsPage.TransactionFee
+        }
+        for (const [fieldName, xpath] of Object.entries(sideBarColumns)) {
+            const element = frame.locator(`xpath=${xpath}`);
+            await expect(element, `${fieldName} should be visible`).toBeVisible({ timeout: 20000 });
+        }
+    }
+
+}
+
+
 
 
 
